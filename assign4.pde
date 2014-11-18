@@ -159,10 +159,8 @@ void alienMaker() {
     int distanceHeight=50;
     int numInRow=12;
     
-    int row;
-    row=i/numInRow;
-    int col;
-    col=i%numInRow;
+    int row=int(i/numInRow);
+    int col=int(i%numInRow);
     
     int x = ox + (distanceWidth*col);
     int y = oy + (distanceHeight*row);
