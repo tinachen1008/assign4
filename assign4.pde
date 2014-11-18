@@ -159,8 +159,10 @@ void alienMaker() {
     int distanceHeight=50;
     int numInRow=12;
     
-    int row=i/numInRow;
-    int col=i%numInRow;
+    int row;
+    row=i/numInRow;
+    int col;
+    col=i%numInRow;
     
     int x = ox + (distanceWidth*col);
     int y = oy + (distanceHeight*row);
@@ -168,6 +170,7 @@ void alienMaker() {
     aList[i]= new Alien(x,y);
   }
 }
+
 
 void drawLife() {
   fill(230, 74, 96);
