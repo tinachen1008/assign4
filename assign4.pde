@@ -152,18 +152,18 @@ void keyPressed() {
 /*---------Make Alien Function-------------*/
 void alienMaker() {
   //aList[0]= new Alien(50, 50);
-  for(float i=0;i<53;i++){
-    float ox=50;
-    float oy=50;
-    float distanceWidth=40;
-    float distanceHeight=50;
-    float numInRow=12;
+  for(int i=0;i<53;i++){
+    int ox=50;
+    int oy=50;
+    int distanceWidth=40;
+    int distanceHeight=50;
+    int numInRow=12;
     
-    float row=i/numInRow;
-    float col=i%numInRow;
+    int row=i/numInRow;
+    int col=i%numInRow;
     
-    float x = ox + (distanceWidth*col);
-    float y = oy + (distanceHeight*row);
+    int x = ox + (distanceWidth*col);
+    int y = oy + (distanceHeight*row);
    
     aList[i]= new Alien(x,y);
   }
