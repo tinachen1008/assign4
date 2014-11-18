@@ -159,13 +159,13 @@ void alienMaker() {
     int distanceHeight=50;
     int numInRow=12;
     
-    float row=i/numInRow;
-    float col=i%numInRow;
+    int row=i/numInRow;
+    int col=i%numInRow;
     
-    float x = ox + (distanceWidth*col);
-    float y = oy + (distanceHeight*row);
+    int x = ox + (distanceWidth*col);
+    int y = oy + (distanceHeight*row);
    
-    aList[i]=new Alien(50+40*(int)x,50+50*(int)y);
+    aList[i]= new Alien(x,y);
   }
 }
 
